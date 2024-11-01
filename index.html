@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Form Title -->
+        <div class="row">
+            <div class="col-md-8">
+                <h1>2011 Super Outbreak Quiz</h1>
+                <p>This is a quiz testing your basic knowledge of the meteorological event known as the <a
+                        href="https://en.wikipedia.org/wiki/2011_Super_Outbreak">2011 Super Outbreak.</a> The questions
+                    will progressively get more challenging as you complete this quiz. Good
+                    Luck!</p>
+                <p></p>
+            </div>
+        </div>
+
+        <!-- Form Content -->
+        <div class="row">
+            <div class="col-md-8">
+                <form>
+                    <!-- Question 1 -->
+                    <div>
+                        <label for="question1">What was the main weather phenomena that occured?</label>
+                        <br>
+                        <input type="text" id="question1" name="question1">
+                    </div>
+
+                    <br>
+
+                    <!-- Question 2 -->
+                    <div>
+                        <label for="question2">Roughly how many tornados touched down during the duration of the outbreak? The answer has to be within 20 of the actual number.</label>
+                        <br>
+                        <input type="email" id="question2" name="question2">
+                    </div>
+
+                    <br>
+
+                    <!-- Question 3 (Multiple Choice) -->
+                    <div>
+                        <p>How many EF5s were spawned?</p>
+                        <input type="radio" id="option1" name="question3" value="option1">
+                        <label for="option1">1</label><br>
+                        <input type="radio" id="option2" name="question3" value="option2">
+                        <label for="option2">2</label><br>
+                        <input type="radio" id="option3" name="question3" value="option3">
+                        <label for="option3">3</label><br>
+                        <input type="radio" id="option4" name="question3" value="option4">
+                        <label for="option4">4</label><br>
+                    </div>
+
+                    <br>
+
+                    <!-- Question 4 (Dropdown) -->
+                    <div>
+                        <label for="question4">What area of the United States was most heavily affected?</label>
+                        <br>
+                        <select id="question4" name="question4">
+                            <option value=" "> </option>
+                            <option value="Northeast">Northeast</option>
+                            <option value="Southeast">Southwest</option>
+                            <option value="Southeast">Southeast</option>
+                            <option value="Northwest">Northwest</option>
+                        </select>
+                    </div>
+
+                    <br>
+
+                    <!-- Question 5 (Checkbox) -->
+                    <div>
+                        <p>Select all individual states that had at least 1 confirmed severe tornado:</p>
+                        <p>hint: a severe tornado is anything that is classified as EF3 or higher</p>
+                        <input type="checkbox" id="state1" name="state" value="Florida">
+                        <label for="state1">Florida</label><br>
+                        <input type="checkbox" id="state2" name="state" value="Alabama">
+                        <label for="state2">Alabama</label><br>
+                        <input type="checkbox" id="state3" name="state" value="Louisiana">
+                        <label for="state3">Louisiana</label><br>
+                        <input type="checkbox" id="state1" name="state" value="Georgia">
+                        <label for="state4">Georgia</label><br>
+                        <input type="checkbox" id="state2" name="state" value="Tennessee">
+                        <label for="state5">Tennessee</label><br>
+                        <input type="checkbox" id="state3" name="state" value="Mississippi">
+                        <label for="state6">Mississippi</label>
+                    </div>
+
+                    <br>
+
+                    <!-- Submit Button -->
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
