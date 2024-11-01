@@ -4,105 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Form</title>
+    <title>2011 Super Outbreak Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="container mt-5">
         <!-- Form Title -->
         <div class="row">
-            <div class="col-md-8">
-                <h1>2011 Super Outbreak Quiz</h1>
-                <p>This is a quiz testing your basic knowledge of the meteorological event known as the <a
-                        href="https://en.wikipedia.org/wiki/2011_Super_Outbreak">2011 Super Outbreak.</a> The questions
-                    will progressively get more challenging as you complete this quiz. Good
-                    Luck!</p>
-                <p></p>
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <h1 class="text-center">2011 Super Outbreak Quiz</h1>
+                <p class="text-center">This is a quiz testing your basic knowledge of the meteorological event known as
+                    the <a href="https://en.wikipedia.org/wiki/2011_Super_Outbreak">2011 Super Outbreak</a>. The
+                    questions
+                    will progressively get more challenging as you complete this quiz. Good luck!</p>
             </div>
         </div>
 
         <!-- Form Content -->
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-lg-8 col-md-10 mx-auto">
                 <form>
                     <!-- Question 1 -->
-                    <div>
-                        <label for="question1">What was the main weather phenomena that occured?</label>
-                        <br>
-                        <input type="text" id="question1" name="question1">
+                    <div class="form-group">
+                        <label for="question1">What was the main weather phenomenon that occurred?</label>
+                        <input type="text" class="form-control" id="question1" name="question1"
+                            placeholder="Enter your answer">
                     </div>
-
-                    <br>
 
                     <!-- Question 2 -->
-                    <div>
-                        <label for="question2">Roughly how many tornados touched down during the duration of the outbreak? The answer has to be within 20 of the actual number.</label>
-                        <br>
-                        <input type="email" id="question2" name="question2">
+                    <div class="form-group">
+                        <label for="question2">Roughly how many tornadoes touched down during the duration of the
+                            outbreak? (Answer must be within 20 of the actual number.)</label>
+                        <input type="number" class="form-control" id="question2" name="question2"
+                            placeholder="Enter a number">
                     </div>
-
-                    <br>
 
                     <!-- Question 3 (Multiple Choice) -->
-                    <div>
+                    <div class="form-group">
                         <p>How many EF5s were spawned?</p>
-                        <input type="radio" id="option1" name="question3" value="option1">
-                        <label for="option1">1</label><br>
-                        <input type="radio" id="option2" name="question3" value="option2">
-                        <label for="option2">2</label><br>
-                        <input type="radio" id="option3" name="question3" value="option3">
-                        <label for="option3">3</label><br>
-                        <input type="radio" id="option4" name="question3" value="option4">
-                        <label for="option4">4</label><br>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="option1" name="question3" value="1">
+                            <label class="form-check-label" for="option1">1</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="option2" name="question3" value="2">
+                            <label class="form-check-label" for="option2">2</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="option3" name="question3" value="3">
+                            <label class="form-check-label" for="option3">3</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="option4" name="question3" value="4">
+                            <label class="form-check-label" for="option4">4</label>
+                        </div>
                     </div>
 
-                    <br>
-
                     <!-- Question 4 (Dropdown) -->
-                    <div>
+                    <div class="form-group">
                         <label for="question4">What area of the United States was most heavily affected?</label>
-                        <br>
-                        <select id="question4" name="question4">
-                            <option value=" "> </option>
+                        <select class="form-control" id="question4" name="question4">
+                            <option value="">Select an area</option>
                             <option value="Northeast">Northeast</option>
-                            <option value="Southeast">Southwest</option>
+                            <option value="Southwest">Southwest</option>
                             <option value="Southeast">Southeast</option>
                             <option value="Northwest">Northwest</option>
                         </select>
                     </div>
 
-                    <br>
-
                     <!-- Question 5 (Checkbox) -->
-                    <div>
-                        <p>Select all individual states that had at least 1 confirmed severe tornado:</p>
-                        <p>hint: a severe tornado is anything that is classified as EF3 or higher</p>
-                        <input type="checkbox" id="state1" name="state" value="Florida">
-                        <label for="state1">Florida</label><br>
-                        <input type="checkbox" id="state2" name="state" value="Alabama">
-                        <label for="state2">Alabama</label><br>
-                        <input type="checkbox" id="state3" name="state" value="Louisiana">
-                        <label for="state3">Louisiana</label><br>
-                        <input type="checkbox" id="state1" name="state" value="Georgia">
-                        <label for="state4">Georgia</label><br>
-                        <input type="checkbox" id="state2" name="state" value="Tennessee">
-                        <label for="state5">Tennessee</label><br>
-                        <input type="checkbox" id="state3" name="state" value="Mississippi">
-                        <label for="state6">Mississippi</label>
+                    <div class="form-group">
+                        <p>Select all individual states that had at least one confirmed severe tornado:</p>
+                        <small class="text-muted">Hint: a severe tornado is classified as EF3 or higher.</small>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="state1" name="state" value="Florida">
+                            <label class="form-check-label" for="state1">Florida</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="state2" name="state" value="Alabama">
+                            <label class="form-check-label" for="state2">Alabama</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="state3" name="state" value="Louisiana">
+                            <label class="form-check-label" for="state3">Louisiana</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="state4" name="state" value="Georgia">
+                            <label class="form-check-label" for="state4">Georgia</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="state5" name="state" value="Tennessee">
+                            <label class="form-check-label" for="state5">Tennessee</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="state6" name="state"
+                                value="Mississippi">
+                            <label class="form-check-label" for="state6">Mississippi</label>
+                        </div>
                     </div>
 
-                    <br>
-
                     <!-- Submit Button -->
-                    <div>
-                        <button type="submit">Submit</button>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
